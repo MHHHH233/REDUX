@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ListVoitures from './Exercices/ListVoitures';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import voitureReducer from './Exercices/VoitureListe';
+
+const store = configureStore({
+  reducer: {
+    voitures: voitureReducer,
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <h1>Car Management App</h1>
+      <ListVoitures />
+    </Provider>
   );
 }
 
