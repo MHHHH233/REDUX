@@ -11,9 +11,9 @@ const ListVoitures = () => {
     useEffect(() => {
         // Fake data
         const fakeData = [
-            { id: 1, Marque: 'Toyota', Type: 'Sedan', prix: 200, image: 'https://example.com/toyota.jpg' },
-            { id: 2, Marque: 'Honda', Type: 'SUV', prix: 250, image: 'https://example.com/honda.jpg' },
-            { id: 3, Marque: 'Ford', Type: 'Truck', prix: 300, image: 'https://example.com/ford.jpg' },
+            { id: 1, Marque: 'Toyota', Type: 'Sedan', prix: 200, image: 'https://images.unsplash.com/photo-1549138144-42ff3cdd2bf8?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+            { id: 2, Marque: 'Honda', Type: 'SUV', prix: 250, image: 'https://images.unsplash.com/photo-1549138144-42ff3cdd2bf8?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+            { id: 3, Marque: 'Ford', Type: 'Truck', prix: 300, image: 'https://images.unsplash.com/photo-1549138144-42ff3cdd2bf8?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
         ];
         dispatch(setVoitures(fakeData));
     }, [dispatch]);
